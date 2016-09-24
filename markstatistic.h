@@ -8,10 +8,15 @@ class MarkStatistic : public QObject
     Q_OBJECT
 public:
     explicit MarkStatistic(QObject *parent = 0);
+    void addMark(int mark);
+    void reset();
 
 signals:
+    void stateChanged(int, int);
 
-public slots:
+private:
+    int sum{};
+    int count{};
 };
 
 #endif // MARKSTATISTIC_H
