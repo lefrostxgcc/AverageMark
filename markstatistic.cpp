@@ -4,7 +4,7 @@ namespace
 {
     inline double calcAverage(double sum, int count)
     {
-        return count != 0 ? sum / count : 0;
+        return count > 0 ? sum / count : 0;
     }
 }
 
