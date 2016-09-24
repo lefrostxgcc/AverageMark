@@ -22,7 +22,7 @@ public slots:
     void on_buttonMark3_clicked();
     void on_buttonMark2_clicked();
     void on_buttonReset_clicked();
-    void updateStatistic(int sum, int count);
+    void updateStatisticLabels(int sum, int count);
 
 private:
     Ui::MainWindow *ui;

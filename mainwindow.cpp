@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
     statistic(new MarkStatistic(this))
 {
     ui->setupUi(this);
-    connect(statistic, &MarkStatistic::stateChanged, this, &MainWindow::updateStatistic);
+    connect(statistic, &MarkStatistic::stateChanged, this, &MainWindow::updateStatisticLabels);
 }
 
 MainWindow::~MainWindow()
@@ -40,7 +40,7 @@ void MainWindow::on_buttonReset_clicked()
     statistic->reset();
 }
 
-void MainWindow::updateStatistic(int sum, int count)
+void MainWindow::updateStatisticLabels(int sum, int count)
 {
     double average { count != 0 ? static_cast<double>(sum) / count : 0 };
 
