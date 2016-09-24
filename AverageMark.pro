@@ -13,9 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    markstatistic.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    markstatistic.h
 
 FORMS    += mainwindow.ui
 
