@@ -17,8 +17,8 @@ void MarkStatistic::addMark(int mark)
 
 void MarkStatistic::reset()
 {
-    sum     = 0;
-    count   = 0;
+    sum   = 0;
+    count = 0;
 
     emit stateChanged(sum, count);
 }
