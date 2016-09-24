@@ -40,10 +40,8 @@ void MainWindow::on_buttonReset_clicked()
     statistic->reset();
 }
 
-void MainWindow::updateStatisticLabels(int sum, int count)
+void MainWindow::updateStatisticLabels(int sum, int count, double average)
 {
-    double average { count != 0 ? static_cast<double>(sum) / count : 0 };
-
     ui->labelAverage->setText(QString::number(average, 'f', 1));
     ui->labelSum    ->setText(QString::number(sum));
     ui->labelCount  ->setText(QString::number(count));

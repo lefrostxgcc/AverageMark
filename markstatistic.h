@@ -12,9 +12,10 @@ public:
     void reset();
 
 signals:
-    void stateChanged(int, int);
+    void stateChanged(int, int, double);
 
 private:
+
     int sum{};
     int count{};
 };
